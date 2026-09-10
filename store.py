@@ -20,8 +20,6 @@ def calculate_total(
     if apply_shipping is True:
         total += 5.0 
             
-    return total
-
 
 if __name__ == "__main__":
     example_subtotal = 100.0
