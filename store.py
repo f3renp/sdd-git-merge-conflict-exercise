@@ -12,8 +12,14 @@ def calculate_total(
 
     # TODO: apply your assigned feature's pricing rule here, gated behind
     # its argument (apply_discount, apply_tax, or apply_shipping)
+    if apply_discount is True:
+        if subtotal > 50:
+            total *= 0.9
+    if apply_tax is True:
+        total *= 1.08
     if apply_shipping is True:
         total += 5.0 
+            
     return total
 
 
